@@ -63,6 +63,7 @@ The Gear Booking System is a comprehensive inventory and booking management appl
 - Web host: Vercel
 - Data sync: Power automate for name re-linking
 - Image hosting: Cloudinary
+- Component library: ShadCN
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
