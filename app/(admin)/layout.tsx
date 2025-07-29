@@ -10,7 +10,7 @@ export default function Layout({
     <SidebarProvider>
       <AppSidebar />
       <main>
-        <SidebarTrigger className="m-2" />
+        <SidebarTrigger className="m-2 p-4 bg-primary hover:cursor-pointer" />
         {children}
       </main>
     </SidebarProvider>

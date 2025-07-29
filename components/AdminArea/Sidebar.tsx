@@ -11,7 +11,7 @@ import {
   SidebarMenuItem,
   SidebarFooter,
 } from "@/components/ui/sidebar"
-import SidebarFooterComponent from "@/components/AdminArea/SidebarFooterComponent"
+import { SidebarFooterComponent } from "@/components/AdminArea/SidebarFooterComponent"
 
 // Menu items.
 const data = {
@@ -28,8 +28,9 @@ const data = {
     },
   ],
   user: {
-    username: "Test User",
-    imageLink: "https://github.com/shadcn.png",
+    name: "Test User",
+    image: "https://github.com/shadcn.png",
+    email: "Email@Email.com",
   },
 }
 
@@ -56,7 +57,7 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        <SidebarFooterComponent data={data.user} />
+        <SidebarFooterComponent user={data.user} />
       </SidebarFooter>
     </Sidebar>
   )
