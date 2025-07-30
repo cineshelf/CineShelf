@@ -36,8 +36,8 @@ const data = {
 
 export function AppSidebar() {
   return (
-    <Sidebar collapsible="icon">
-      <SidebarContent>
+    <Sidebar collapsible="icon" className="border-none">
+      <SidebarContent className="bg-sidebar">
         <SidebarGroup>
           <SidebarGroupLabel className="text-xl">CineShelf</SidebarGroupLabel>
           <SidebarGroupContent>
@@ -56,7 +56,7 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter>
+      <SidebarFooter className="hover:cursor-pointer">
         <SidebarFooterComponent user={data.user} />
       </SidebarFooter>
     </Sidebar>

@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main>
+      <main className="bg-sidebar w-full">
         <SidebarTrigger className="m-2 p-4 bg-primary hover:cursor-pointer" />
         {children}
       </main>

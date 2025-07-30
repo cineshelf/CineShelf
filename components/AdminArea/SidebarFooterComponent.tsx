@@ -51,10 +51,7 @@ export function SidebarFooterComponent({
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <SidebarMenuButton
-              size="lg"
-              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
-            >
+            <SidebarMenuButton size="lg" className="hover:cursor-pointer">
               <Avatar className="h-8 w-8 rounded-lg">
                 <AvatarImage src={image} alt={name} />
                 <AvatarFallback className="rounded-lg">CN</AvatarFallback>
@@ -87,8 +84,8 @@ export function SidebarFooterComponent({
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuSub>
-                <DropdownMenuSubTrigger className="flex cursor-pointer items-center gap-2">
-                  <Sun className="size-4" />
+                <DropdownMenuSubTrigger className="flex hover:cursor-pointer items-center gap-2">
+                  <Sun className="size-4 text-muted-foreground" />
                   <span>Theme</span>
                 </DropdownMenuSubTrigger>
                 <DropdownMenuSubContent>
@@ -115,21 +112,21 @@ export function SidebarFooterComponent({
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuSub>
-              <DropdownMenuItem>
+              <DropdownMenuItem className="hover:cursor-pointer">
                 <BadgeCheck />
                 Account
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem className="hover:cursor-pointer">
                 <CreditCard />
                 Billing
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem className="hover:cursor-pointer">
                 <Bell />
                 Notifications
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem className="hover:cursor-pointer">
               <LogOut />
               Log out
             </DropdownMenuItem>
